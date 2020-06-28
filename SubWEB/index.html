@@ -5,37 +5,35 @@
   <link rel="stylesheet" href="css/style.css">
  </head>
  <body>
-​<h1>Time Stamp Generator</h1>
-<div style="margin-left:75%;padding:1px 16px;">
-<button>Upload file</button>
-<form action="/action_page.php">
-  <label for="fname">Interval(Seconds):</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">File saved as:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Process">
-</form>
-
+​<h1 style="padding: 0px 0px 0px 5px;">Time Stamp Generator</h1>
+<div>
+    <label for="fileInput">Upload .txt file:</label>
+    <input type="file" id="lname" name="lname" accept=".txt"><br><br>
+    <form action="/action_page.php">
+    <label for="fname">Interval(Seconds):</label>
+    <input type="number" id="fname" name="fname"><br><br>
+    <label for="lname">File saved as:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Process">
+    </form>
 </div>
 
-<div style="margin-left:0%;margin-right:26%; padding:1px 16px;">
-<img src="img/notepadTranscript.png">
+<div style="width: 800px">
 
-<!-- images to be used later
-<img class="mySlides" src="img/Shanghai-TZ/image2.jpeg">
-<img class="mySlides" src="img/Shanghai-TZ/image3.jpeg">
-<img class="mySlides" src="img/Shanghai-TZ/image005.jpeg">
-<img class="mySlides" src="img/Shanghai-TZ/image007.jpeg">
-<button class="w3-left" onclick="plusDivs(-1)">❮</button>
-<button class="right" onclick="plusDivs(+1)">❯</button>
--->
-  <p>Takes a .txt transcription that has intervals seperated by new lines and length of desired time intervals.</p>
-  <img src="img/timeStampedExample.png">
-  <p>Outputs a time stamped .srt file ready to by encoded into a video as subtitles</p>
+  <div style="width:300px; float: left; padding: 5px 5px 5px 10px;">
+    <img src="img/notepadTranscript.png">
+    <p>Takes a .txt transcription that has intervals seperated by new lines and length of desired time intervals.</p>
+  </div>
+  
+    <img style="width:100px; height:80px; float: center; padding-top: 100px; padding-left: 50px;" src="img/arrow.png" />
 
+  <div style="width: 300px; float: right; padding: 5px 5px 5px 10px; ">
+    
+    <img src="img/timeStampedExample.png">
+    <p>Outputs a time stamped .srt file ready to by encoded into a video as subtitles</p>
 
+  </div>
 </div>
-
  <!-- <script src="script.js"></script>
 -->
  </body>
